@@ -18,7 +18,7 @@ public class ItemGenerator : MonoBehaviour
     {   
         //ユニティちゃんのオブジェクトを取得
         this.unitychan = GameObject.Find("unitychan");   
-        //チェックポイントの作成
+        //チェックポイントを15m毎に作成
         for (int i = startPos; i < goalPos; i += 15)
         {
             GameObject checkPoint = Instantiate(checkpointPrefab);
